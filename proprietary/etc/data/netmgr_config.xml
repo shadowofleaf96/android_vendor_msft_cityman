@@ -324,8 +324,8 @@
       </list>
    </listitem>
 
-   <!-- MSM8992 parameters -->
-   <listitem name = "msm8992">
+   <!-- MSM8994 parameters -->
+   <listitem name = "msm8994">
 
       <data name="qmi_dpm_enabled" type="int"> 1 </data>
       <data name="wda_data_format_enabled" type="int"> 1 </data>

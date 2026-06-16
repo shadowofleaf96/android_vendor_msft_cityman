@@ -140,8 +140,8 @@
      </list>
    </listitem>
 
-   <!-- Configuration for MSM8992  -->
-   <listitem name="msm8992">
+   <!-- Configuration for MSM8994  -->
+   <listitem name="msm8994">
 
      <data name="qos_enabled" type="int"> 1 </data>
      <data name="rmnet_data_enabled" type="int"> 1 </data>

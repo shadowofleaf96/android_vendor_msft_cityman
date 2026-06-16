@@ -147,8 +147,8 @@
        </list>
    </listitem>
 
-   <!-- MSM8992 parameters -->
-   <listitem name = "msm8992">
+   <!-- MSM8994 parameters -->
+   <listitem name = "msm8994">
 
       <data name="single_qmux_ch" type="int"> 1 </data>
       <data name="dpm_enabled" type="int"> 1 </data>
