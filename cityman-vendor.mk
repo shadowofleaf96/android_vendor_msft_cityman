@@ -79,7 +79,9 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/msft/cityman/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/msft/cityman/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
-    vendor/msft/cityman/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so
+    vendor/msft/cityman/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
+    vendor/msft/cityman/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so
 
 # List the packages/modules to be installed in the final image
 PRODUCT_PACKAGES += \
@@ -96,7 +98,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9330 \
     LifeTimerService \
     atfwd \
-    qcrilmsgtunnel \
     cneapiclient \
     com.google.android.camera.experimental2016 \
     qcrilhook \
@@ -123,6 +124,8 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/firmware/otp30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/otp30.bin \
     vendor/msft/cityman/proprietary/vendor/firmware/qwlan30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qwlan30.bin \
     vendor/msft/cityman/proprietary/vendor/firmware/utf30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/utf30.bin \
+        vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.2.tlv \
+        vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.0.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/double_twist.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/double_twist.napp \
     vendor/msft/cityman/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
