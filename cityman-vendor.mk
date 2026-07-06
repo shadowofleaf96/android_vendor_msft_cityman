@@ -21,7 +21,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # List files to be copied directly to the target filesystem
 PRODUCT_COPY_FILES += \
-    vendor/msft/cityman/proprietary/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/msft/cityman/proprietary/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/msft/cityman/proprietary/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/msft/cityman/proprietary/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
@@ -97,7 +96,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentTGoogleWCD9330 \
     HotwordEnrollmentXGoogleWCD9330 \
     LifeTimerService \
-    atfwd \
     cneapiclient \
     com.google.android.camera.experimental2016 \
     qcrilhook \
@@ -119,6 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/bdwlan30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan30.bin \
+    vendor/msft/cityman/proprietary/vendor/firmware/bdwlan30.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan30.b00 \
     vendor/msft/cityman/proprietary/vendor/firmware/btfw32.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/btfw32.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/btnv32.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/btnv32.bin \
     vendor/msft/cityman/proprietary/vendor/firmware/otp30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/otp30.bin \
