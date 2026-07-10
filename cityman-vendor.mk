@@ -45,13 +45,13 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/msft/cityman/proprietary/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/msft/cityman/proprietary/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
-    vendor/msft/cityman/proprietary/etc/acdbdata/Bluetooth_cal_8994.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
-    vendor/msft/cityman/proprietary/etc/acdbdata/General_cal_8994.acdb:system/etc/acdbdata/General_cal.acdb \
-    vendor/msft/cityman/proprietary/etc/acdbdata/Global_cal_8994.acdb:system/etc/acdbdata/Global_cal.acdb \
-    vendor/msft/cityman/proprietary/etc/acdbdata/Handset_cal_8994.acdb:system/etc/acdbdata/Handset_cal.acdb \
-    vendor/msft/cityman/proprietary/etc/acdbdata/Hdmi_cal_8994.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
-    vendor/msft/cityman/proprietary/etc/acdbdata/Headset_cal_8994.acdb:system/etc/acdbdata/Headset_cal.acdb \
-    vendor/msft/cityman/proprietary/etc/acdbdata/Speaker_cal_8994.acdb:system/etc/acdbdata/Speaker_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_Bluetooth_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_General_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_Global_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_Handset_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_Hdmi_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_Headset_cal.acdb \
+    vendor/msft/cityman/proprietary/etc/acdbdata/cityman/Cityman_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/cityman/Cityman_Speaker_cal.acdb \
     $(LOCAL_PATH)/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     $(LOCAL_PATH)/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
     vendor/msft/cityman/proprietary/etc/cne/profile.txt:system/etc/cne/profile.txt \
@@ -79,6 +79,8 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/msft/cityman/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/msft/cityman/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
     vendor/msft/cityman/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/msft/cityman/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so
 
@@ -123,8 +125,8 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/firmware/otp30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/otp30.bin \
     vendor/msft/cityman/proprietary/vendor/firmware/qwlan30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qwlan30.bin \
     vendor/msft/cityman/proprietary/vendor/firmware/utf30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/utf30.bin \
-        vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.2.tlv \
-        vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.0.tlv \
+    vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.2.tlv \
+    vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.0.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/double_twist.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/double_twist.napp \
     vendor/msft/cityman/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
