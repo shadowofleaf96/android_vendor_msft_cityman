@@ -185,25 +185,27 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/msft/cityman/proprietary/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so \
     vendor/msft/cityman/proprietary/vendor/lib/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a4xx.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_common.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_hfr_120.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_hfr_240.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_hfr_60.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_hfr_90.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_liveshot.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_preview.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_snapshot.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_uhd_video.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_cpp_video.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_default_video.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_hfr_120.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_hfr_240.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_hfr_60.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_hfr_90.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_liveshot.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_postproc.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_preview.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_imx377_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx377_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_common_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_common_ihdr.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_common.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_hfr_120.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_liveshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_liveshot_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_liveshot_video_4k.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_liveshot_video_ihdr_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_liveshot_video_ihdr_4k.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_liveshot_video_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_liveshot_video_ihdr.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_snapshot_night.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_video_4k.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_video_ihdr_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_video_ihdr_4k.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_video_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_video_ihdr.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_cpp_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_default_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_hfr_120.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_postproc.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_snapshot_night.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_video_4k.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_video_ihdr_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_video_ihdr_4k.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_video_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_video_ihdr.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_common.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_liveshot.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_preview.so \
@@ -264,7 +266,10 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eztune_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_imx377.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx377.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx230.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_mot_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_imx230.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_sony_imx230_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx230_eeprom.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_abcc44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abcc44.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_abf44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf44.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_bcc44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bcc44.so \
