@@ -122,13 +122,13 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.2.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.0.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/msft/cityman/proprietary/vendor/firmware/double_twist.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/double_twist.napp \
+
     vendor/msft/cityman/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/napp_list.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/napp_list.cfg \
-    vendor/msft/cityman/proprietary/vendor/firmware/pickup_gesture.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/pickup_gesture.napp \
+
     vendor/msft/cityman/proprietary/vendor/firmware/sig_motion.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/sig_motion.napp \
-    vendor/msft/cityman/proprietary/vendor/firmware/synaptics_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics_fw.bin \
+
     vendor/msft/cityman/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
     vendor/msft/cityman/proprietary/vendor/firmware/widevine.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b01 \
     vendor/msft/cityman/proprietary/vendor/firmware/widevine.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b02 \
