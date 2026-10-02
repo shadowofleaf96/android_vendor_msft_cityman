@@ -122,13 +122,9 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.2.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.0.tlv \
     vendor/msft/cityman/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
-
     vendor/msft/cityman/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/msft/cityman/proprietary/vendor/firmware/napp_list.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/napp_list.cfg \
-
-    vendor/msft/cityman/proprietary/vendor/firmware/sig_motion.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/sig_motion.napp \
-
     vendor/msft/cityman/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
     vendor/msft/cityman/proprietary/vendor/firmware/widevine.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b01 \
     vendor/msft/cityman/proprietary/vendor/firmware/widevine.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b02 \
@@ -145,6 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/hw/tof.vl6180.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/tof.vl6180.so \
     vendor/msft/cityman/proprietary/vendor/lib/hw/vulkan.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8994.so \
     vendor/msft/cityman/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/msft/cityman/proprietary/vendor/lib/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-dplmedia.so \
     vendor/msft/cityman/proprietary/vendor/lib/lib-ims-rcscmjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-ims-rcscmjni.so \
     vendor/msft/cityman/proprietary/vendor/lib/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsSDP.so \
@@ -174,6 +171,9 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libactuator_lc898212xd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd.so \
     vendor/msft/cityman/proprietary/vendor/lib/libactuator_lc898212xd_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd_camcorder.so \
     vendor/msft/cityman/proprietary/vendor/lib/libactuator_lc898212xd_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd_camera.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libactuator_mot_lc898212xd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_mot_lc898212xd.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libactuator_mot_lc898212xd_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_mot_lc898212xd_camcorder.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libactuator_mot_lc898212xd_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_mot_lc898212xd_camera.so \
     vendor/msft/cityman/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/msft/cityman/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
     vendor/msft/cityman/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
@@ -207,14 +207,19 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_video_ihdr_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_video_ihdr_4k.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_mot_imx230_video_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx230_video_ihdr.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_common.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_hfr_120.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_liveshot.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_preview.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_snapshot_night.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_cpp_video.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_default_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_hfr_120.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_liveshot.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_postproc.so \
     vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_snapshot_night.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5693_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_video.so \
     vendor/msft/cityman/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
     vendor/msft/cityman/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/msft/cityman/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
@@ -242,7 +247,28 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qgl.so \
     vendor/msft/cityman/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libflash_sky81296.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_sky81296.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmot_sensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_sensorlistener.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libAisAdapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAisAdapter.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libAlAisLib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisLib.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libAlAisTune.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisTune.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libAlAisWrap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisWrap.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmbs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmbs.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot-qc-fd-offline.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libadvalgcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadvalgcore.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libjscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjscore.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libjustshoot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjustshoot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgproc-jni.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgprocservice.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmipl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmipl.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+      vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
@@ -258,19 +284,12 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_vpe_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_vpe_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera2_wnr_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_wnr_module.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_brcb032gwz_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_brcb032gwz_eeprom.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_cac2_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac2_lib.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dummyalgo.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eebinparse.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eeprom_util.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eztune_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx230.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_mot_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_imx230.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_sony_imx230_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx230_eeprom.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_abcc44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abcc44.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_abf44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf44.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_bcc44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bcc44.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_be_stats44.so \
@@ -306,16 +325,18 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_wb40.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_m24c64s_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_m24c64s_eeprom.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_mot_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_imx230.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_omnivision_ov5693_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_omnivision_ov5693_eeprom.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ov5693.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5693.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_pdaf_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf_v3.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppbase_module.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_sony_imx230_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx230_eeprom.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_vpu_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vpu_module.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmipl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmipl.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_vstab_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vstab_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
     vendor/msft/cityman/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
@@ -350,6 +371,7 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/msft/cityman/proprietary/vendor/lib/rfsa/adsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/fastrpc_shell_0 \
     vendor/msft/cityman/proprietary/vendor/lib/soundfx/libfmas.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libfmas.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
     vendor/msft/cityman/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/msft/cityman/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/msft/cityman/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
@@ -506,4 +528,11 @@ PRODUCT_COPY_FILES += \
 # Add ALL missing proprietary libraries
 PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
-    vendor/msft/cityman/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so
+    vendor/msft/cityman/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerabgproc-jni.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libmmcamera2_sensor_debug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_sensor_debug.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotocalibration.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/msft/cityman/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so
+
