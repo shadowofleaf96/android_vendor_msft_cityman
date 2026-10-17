@@ -84,7 +84,6 @@ PRODUCT_PACKAGES += \
     RCSBootstraputil \
     RcsImsBootstraputil \
     Tycho \
-    CNEService \
     DCMO \
     DMConfigUpdate \
     DiagMon \
@@ -92,7 +91,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentTGoogleWCD9330 \
     HotwordEnrollmentXGoogleWCD9330 \
     LifeTimerService \
-    cneapiclient \
     com.google.android.camera.experimental2016 \
     qcrilhook \
     rcsimssettings \
