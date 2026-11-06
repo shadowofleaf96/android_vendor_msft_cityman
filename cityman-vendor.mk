@@ -135,7 +135,6 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/msft/cityman/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/msft/cityman/proprietary/vendor/lib/hw/bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/bluetooth.default.so \
-    vendor/msft/cityman/proprietary/vendor/lib/hw/sound_trigger.primary.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8994.so \
     vendor/msft/cityman/proprietary/vendor/lib/hw/tof.vl6180.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/tof.vl6180.so \
     vendor/msft/cityman/proprietary/vendor/lib/hw/vulkan.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8994.so \
     vendor/msft/cityman/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
@@ -323,7 +322,7 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_wb40.so \
-    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_mot_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_imx230.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_mot_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_imx230_moto.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_omnivision_ov5693_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_omnivision_ov5693_eeprom.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ov5693.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5693.so \
     vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
@@ -534,3 +533,71 @@ PRODUCT_COPY_FILES += \
     vendor/msft/cityman/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/msft/cityman/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so
 
+
+# OnePlus 2 (msm8994, VFE46) mm-camera stack for the IMX230 adapter
+PRODUCT_COPY_FILES += \
+    vendor/msft/cityman/proprietary/vendor/lib/libactuator_rohm_bu63165gwl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu63165gwl.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libactuator_rohm_bu63165gwl_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu63165gwl_camcorder.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libactuator_rohm_bu63165gwl_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu63165gwl_camera.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_common.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_hfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_hfr.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_liveshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_panorama.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_preview.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_cpp_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_cpp_zsl.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_default_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_hfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_hfr.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_liveshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_panorama.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_postproc.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_preview.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_quarter_size_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_quarter_size_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov13860_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13860_zsl.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_cpp_liveshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_cpp_preview.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_cpp_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_cpp_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_postproc.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_preview.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_15fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_15fps_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_cpp_liveshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_cpp_preview.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_cpp_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_cpp_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_postproc.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_preview.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_snapshot.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_30fps_video.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libchromatix_ov5648_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_common.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_bf_scale_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bf_scale_stats46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_bg_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bg_stats46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_clf46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clf46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_color_correct46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_correct46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_color_xform_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_encoder46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_color_xform_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_video46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_viewfinder46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_cs_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_cs_stats46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_fovcrop_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_encoder46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_fovcrop_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_video46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_viewfinder46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_gic46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gic46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_gtm46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gtm46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_hdr46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_hdr_be_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr_be_stats46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_ihist_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ihist_stats46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_pedestal_correct46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_pedestal_correct46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_rs_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_rs_stats46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_scaler_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_encoder46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_scaler_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_video46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_scaler_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_viewfinder46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_isp_wb46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_wb46.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ov13860.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13860.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ov13860_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13860_eeprom.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ov5648.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_ov5648_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648_eeprom.so \
+    vendor/msft/cityman/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so
